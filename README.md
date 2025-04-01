@@ -11,11 +11,12 @@ num4partialdifferent
 ## VS. ##
 
 ## Requirement ##
+
 ruby FFI-compilerライブラリ
 
 ## Usage ##
 
-sample/samplez.rbを参照
+sample/spec内の各ファイル参照
 
 ## install ##
 
