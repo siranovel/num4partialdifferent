@@ -25,11 +25,18 @@ From rubygems:
     [sudo] gem install num4partialdiff
 ~~~
 
+Install via Gemfile:  
+~~~
+source "https://rubygems.pkg.github.com/siranovel" do
+    gem "num4partialdiff"
+end
+~~~
+
 or from the git repository on github:  
 ~~~
     git clone https://github.com/siranovel/num4partialdifferent.git  
     cd num4partialdifferent  
-    jruby -S gem build *.gemspec
+    jruby -S gem build num4partialdiff.gemspec
     jruby -S gem install num4partialdiff
 ~~~
 
