@@ -10,7 +10,7 @@ jobs:
     runs-on: ubuntu-latest
     
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Ruby 3.1
       uses: ruby/setup-ruby@v1
@@ -36,13 +36,15 @@ jobs:
       packages: write
 
     steps:
-    - uses: actions/checkout@v3
+    - uses: actions/checkout@v4
 
     - name: Set up Ruby 3.1
       uses: ruby/setup-ruby@v1
       with:
         ruby-version: 3.1.1
     - run: bundle install
+      env:
+        BUNDLE_RUBYGEMS__PKG__GITHUB__COM: ${{ secrets.GITHUB_TOKEN }}
 
     - name: Publish to GPR
       uses: siranovel/gem_push_gpr@master
